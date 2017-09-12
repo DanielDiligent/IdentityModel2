@@ -132,7 +132,7 @@ Task("Pack")
     // add build suffix for CI builds
     if(isAppVeyor)
     {
-        settings.VersionSuffix = "strong-named";
+        settings.VersionSuffix = "strong-named-build" + AppVeyor.Environment.Build.Number.ToString().PadLeft(5,'0');
     }
 
     DotNetCorePack(packPath, settings);
