@@ -1,4 +1,4 @@
-version: 2.7.0-{branch}
+version: 2.7.0-{branch}-build{build}
 branches:
   only:
   - strong-name
